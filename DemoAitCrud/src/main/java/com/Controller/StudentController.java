@@ -49,7 +49,6 @@ public class StudentController extends HttpServlet {
 				default:
 						List<Student>li=s.getAllStudent();
 						req.setAttribute("studlist", li);
-						
 						rd=req.getRequestDispatcher("view.jsp");
 						pt.println(li);  
 						rd.forward(req, resp);
